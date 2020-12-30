@@ -10,6 +10,10 @@ Feature: Practice Assertion The Karate Way
     * print 'Hello world!' + num1
 
     Scenario: Working with Simple Json
-      * def myJson = {name: 'bar', num :[1,2,3]}
+      * def myJson = {name: 'bar', num :[99,88,54]}
       * print 'Whole Json is '+myJson
       * print 'Then name is '+myJson.name
+      * print 'The Second Number in the json is ',myJson.num[1]
+      
+      * assert myJson.name == 'bar'
+      * assert myJson.num[2] == '54'
