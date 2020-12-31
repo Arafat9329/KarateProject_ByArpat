@@ -6,7 +6,9 @@ function fn() {
   }
   var config = {
     env: env,
-	myVarName: 'someValue'
+	b20Slogan: 'VOILA!!!',
+	b20Slogan2: 'Nothings is impossible!!!',
+	b20Slogan3: 'Lets do the things '
   }
   if (env == 'dev') {
     // customize
